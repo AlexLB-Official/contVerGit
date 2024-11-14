@@ -26,7 +26,6 @@ public class ex4 {
 		
  		while (num >= 1) {
  			result = factorial(num);
- 			tieneDos = contDos(result);
 			// Pasamos el valor al metodo fectorial()
 			System.out.println("El factorial de " + num + " es igual a " + result);
 		
@@ -43,14 +42,5 @@ public class ex4 {
 			return n * factorial(n-1);
 		else
 			return 1;
-	}
-	
-	public static boolean contDos(long num) {
-		while (num>0)
-			if ((num%10)==2)
-				return true;
-			else
-				num = num/10;
-		return false;
 	}
 }
