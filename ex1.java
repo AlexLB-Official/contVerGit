@@ -29,7 +29,7 @@ import java.util.Scanner;
 		this.minuto = minuto %60;
 		this.segundos = segundos % 60;
 	}
-	public Reloj (Reloj r){//Constructor de copia
+	public Reloj (Reloj r){
 		this.hora = r.hora;
 		this.minuto = r.minuto;
 		this.segundos = r.segundos;
