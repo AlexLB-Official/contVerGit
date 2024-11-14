@@ -79,20 +79,23 @@ import java.util.Scanner;
 	static Scanner myScanner = new Scanner(System.in);
 	public static void main (String args [])
 	{
+        //Creamos los objetos
 		Reloj reloj1 = new Reloj();
 		Reloj reloj2 = new Reloj(15, 00,00);
+        //Realizamos el menu
 		int opcion=1;
 		System.out.println("Que quieres hacer? \n 1-Crear un reloj que marque las 12:00 \n 2-Crear un reloj con la hora a elegir \n 3- Sacar los segundos totales de un reloj \n 4- Cambiar la hora de un reloj \n 5- Añadir segundos al reloj inicial \n 6- Recibir las horas del reloj inicial\n 7- Salir del programa");
-		while ((opcion >= 1) || (opcion <=2)){
+		while ((opcion >= 1) || (opcion <=7)){
 		
 			opcion = myScanner.nextInt();
+            //Realizo el menu del reloj 
 			switch (opcion) {
 				case 1:
 					System.out.println(reloj1);
 					break;
 				case 2:
 					int h,m,s;
-					System.out.println("Introduce la hora en formate hh/mm/ss");
+					System.out.println("Introduce la hora en formate hh/mm/ss");//Pido al usuario que introduzca una hora
 					h = myScanner.nextInt();
 					m = myScanner.nextInt();
 					s = myScanner.nextInt();
