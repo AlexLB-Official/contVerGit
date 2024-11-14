@@ -16,8 +16,8 @@ import java.util.Scanner;
  {
 	//Atributos
 	private int hora;
-	private int minuto;
 	private int segundos;
+    private int minuto;
 
 	public Reloj (){ //CONSTRUCTOR POR DEFECTO
 		hora = 12;
